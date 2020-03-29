@@ -113,10 +113,18 @@ function Home() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2,
-      columnNumber: 10
+      lineNumber: 3,
+      columnNumber: 5
     }
-  }, "Hello world!");
+  }, "Hello world!", __jsx("a", {
+    href: "/api/github/oauth/login",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 7
+    }
+  }, "Login with GitHub"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
