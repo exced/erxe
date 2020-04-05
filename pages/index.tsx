@@ -1,9 +1,25 @@
-function Home() {
+import { useRouter } from 'next/router';
+import initializeClient from '../graphql/client';
+import ClientProvider from '../components/ClientProvider';
+
+function Home(props) {
+  const router = useRouter();
+  const code = router.query.code;
+
+  if (!code) {
+    return (
+      <div>
+        <a href="/api/github/oauth/login">Login with GitHub</a>
+      </div>
+    );
+  }
+
+  const client = initializeClient(props.token);
+
   return (
-    <h1>
-      Hello world!
-      <a href="/api/github/oauth/login">Login with GitHub</a>
-    </h1>
+    <div>
+      <ClientProvider code={code} />
+    </div>
   );
 }
 
