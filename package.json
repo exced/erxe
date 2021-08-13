@@ -11,7 +11,7 @@
   "dependencies": {
     "@now/node": "^1.5.0",
     "@octokit/oauth-app": "^1.1.0",
-    "next": "^9.3.2",
+    "next": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
